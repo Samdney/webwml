@@ -10,18 +10,25 @@ var software = {
                      'sid':     [ 'sid' ],
                      'trusty':  [ 'trusty'],
                      'xenial':  [ 'xenial'],
-                     'yakkety': [ 'yakkety'],
-                     'zesty':   [ 'zesty'],
+                     'artful':  [ 'artful'],
                      },
-         'experimental-0.3.2.x': {
+         'experimental-0.3.3.x': {
                      'jessie':  [ 'jessie' ],
                      'stretch': [ 'stretch' ],
                      'buster':  [ 'buster' ],
                      'sid':     [ 'sid' ],
                      'trusty':  [ 'trusty'],
                      'xenial':  [ 'xenial'],
-                     'yakkety': [ 'yakkety'],
-                     'zesty':   [ 'zesty'],
+                     'artful':  [ 'artful'],
+                     },
+         'nightly-master': {
+                     'jessie':  [ 'jessie' ],
+                     'stretch': [ 'stretch' ],
+                     'buster':  [ 'buster' ],
+                     'sid':     [ 'sid' ],
+                     'trusty':  [ 'trusty'],
+                     'xenial':  [ 'xenial'],
+                     'artful':  [ 'artful'],
                      },
        },
 'tor (from source)': {
@@ -32,18 +39,16 @@ var software = {
                      'sid':     [ 'sid' ],
                      'trusty':  [ 'trusty'],
                      'xenial':  [ 'xenial'],
-                     'yakkety': [ 'yakkety'],
-                     'zesty':   [ 'zesty'],
+                     'artful':  [ 'artful'],
                      },
-         'experimental-0.3.2.x': {
+         'experimental-0.3.3.x': {
                      'jessie':  [ 'jessie' ],
                      'stretch': [ 'stretch' ],
                      'buster':  [ 'buster' ],
                      'sid':     [ 'sid' ],
                      'trusty':  [ 'trusty'],
                      'xenial':  [ 'xenial'],
-                     'yakkety': [ 'yakkety'],
-                     'zesty':   [ 'zesty'],
+                     'artful':  [ 'artful'],
                      },
        },
 };
@@ -127,7 +132,7 @@ function update() {
                 package = package.split(' ')[0];
                 source_install = true;
             }
-            txt += "http://deb.torproject.org/torproject.org";
+            txt += "https://deb.torproject.org/torproject.org";
             txt += " ";
             txt += keys[i];
             txt += " main";
@@ -135,7 +140,7 @@ function update() {
             target = keys[i];
             txt = "deb " + txt + "\ndeb-src " + txt;
             if (version != 'stable') {
-                txt2 = "http://deb.torproject.org/torproject.org";
+                txt2 = "https://deb.torproject.org/torproject.org";
                 txt2 += " ";
                 txt2 += package;
                 txt2 += "-";

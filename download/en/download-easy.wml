@@ -119,6 +119,30 @@
 	  <p class="alt-dl">Not Using Linux? Download for <a href="#mac">Mac</a> or <a href="#windows">Windows</a></p>
 	</div>
       </div>
+<!-- START BSD -->
+
+  <div id="openbsd" class="easy bsd">
+    <div class="package" style="padding-top: 13px; border-top: 0px;">
+      <div class="desc">
+        <h2>Running Tor on OpenBSD</h2>
+	<p>These are installation instructions for running Tor Browser in a OpenBSD environment.</p>
+	<p>To install from OpenBSD's packages, run:</p>
+
+
+        <pre>pkg_add tor-browser</pre>
+
+	<p>Sometimes the most recent version of Tor Browser on OpenBSD is behind the current release. The available version of TB on OpenBSD should be checked with:
+
+	<pre>pkg_info -Q tor-browser</pre>
+
+	<p>If provided version is not the current Tor Browser version, it is not recommended.</p>
+   
+        <p>To install the Tor Browser port from an updated ports tree, run:</p>
+
+        <pre>cd /usr/ports/meta/tor-browser && make install</pre>
+      </div>
+    </div>
+  </div>
 <!-- START Orbot -->
       <div id="android" class="easy android">
     <div class="package" style="padding-top: 13px; border-top: 0px;">
@@ -268,6 +292,7 @@ are blocked.</p>
 <li class="dropdown"><a href="#windows">Microsoft Windows</a></li>
 <li class="dropdown"><a href="#mac">Apple OS X</a></li>
 <li class="dropdown"><a href="#linux">Linux</a></li>
+<li class="dropdown"><a href="#openbsd">OpenBSD</a></li>
 <li class="dropdown"><a href="#android">Android</a></li>
 <li class="dropdown"><a href="<page download/download>">All Downloads</a></li>
 </ul>
